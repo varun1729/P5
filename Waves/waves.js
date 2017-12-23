@@ -8,7 +8,6 @@ const incX = sizeX/splits;
 const waveColor = '#36f4ff';
 const backgroundColor = '#ff4136';
 
-
 function setup() { 
   createCanvas(sizeX, sizeY);
   startX = 0;
@@ -20,7 +19,6 @@ function setup() {
   incAngle = TWO_PI/splits*numOfWaves;
 
 } 
-
 
 function draw() {
   background(backgroundColor);
