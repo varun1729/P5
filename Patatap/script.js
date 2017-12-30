@@ -1,8 +1,8 @@
-const radiusDecrement = 3;
+const radiusDecrement = 5;
 const sizeX =  document.documentElement.clientWidth;
 const sizeY =  document.documentElement.clientHeight;
 
-const fr = 60;
+const fr = 100;
 const initialDiameter = sizeX / 4;
 
 let arr = []
