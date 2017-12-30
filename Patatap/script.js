@@ -2,9 +2,8 @@ const radiusDecrement = 3;
 const sizeX =  document.documentElement.clientWidth;
 const sizeY =  document.documentElement.clientHeight;
 
-console.log(sizeX, sizeY);
 const fr = 60;
-const initialRadius = sizeX / 4;
+const initialDiameter = sizeX / 4;
 
 let arr = []
 let circlePatterns = []
@@ -115,7 +114,7 @@ function draw() {
 function keyPressed() {
 	if (keyCode <= 90 && keyCode >= 65)
 	{
-	    let temp = [circlePatterns[keyCode - 65][0], random(sizeX), random(sizeY), initialRadius];
+	    let temp = [circlePatterns[keyCode - 65][0], random(sizeX-initialDiameter)+initialDiameter/2, random(sizeY-initialDiameter)+initialDiameter/2, initialDiameter];
 	    arr.push(temp);
 	    circlePatterns[keyCode - 65][1].play();
 	}
