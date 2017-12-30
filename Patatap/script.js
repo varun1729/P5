@@ -100,7 +100,7 @@ function setup() {
 }
 
 function draw() {
-    background(240);
+    background("#fff0ed");
     while ((arr[0] != undefined) && (arr[0][3] <= 0)) {
         arr.shift();
     }
@@ -114,7 +114,8 @@ function draw() {
 function keyPressed() {
 	if (keyCode <= 90 && keyCode >= 65)
 	{
-	    let temp = [circlePatterns[keyCode - 65][0], random(sizeX-initialDiameter)+initialDiameter/2, random(sizeY-initialDiameter)+initialDiameter/2, initialDiameter];
+	    // let temp = [circlePatterns[keyCode - 65][0], random(sizeX-initialDiameter)+initialDiameter/2, random(sizeY-initialDiameter)+initialDiameter/, initialDiameter];
+        let temp = [circlePatterns[keyCode - 65][0], random(sizeX), random(sizeY), initialDiameter];
 	    arr.push(temp);
 	    circlePatterns[keyCode - 65][1].play();
 	}
